@@ -10,10 +10,10 @@
             </div>
             <div class="caculator__button">
                 <div class="caculator__button-group caculator__button-group-1">
-                    <button class="btn">÷</button>
-                    <button class="btn">M</button>
-                    <button class="btn">C</button>
-                    <button class="btn">X</button>
+                    <button id="exit" class="btn" onClick="javascript:window.close('','_parent','');"><b>X</b></button>
+                    <button class="btn" onclick="handleClick(event)">M</button>
+                    <button class="btn" onclick="Reset()">C</button>
+                    <button class="btn" onclick="handleClick(event)">÷</button>
                 </div>
                 <div class="caculator__button-group caculator__button-group-2">
                     <button class="btn btn-pretty" onclick="handleClick(event)">1</button>

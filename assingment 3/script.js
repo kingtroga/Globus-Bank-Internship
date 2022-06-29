@@ -85,17 +85,15 @@ function handleClick(e) {
     if (isNumeric(element) && plug == false)  {
         operand2 += element;
         document.getElementById("display_text-2").innerHTML = operand1 + " " + operator + " " + operand2;
-    }
-
-
-    
+    } 
     console.log(operand1);
     console.log(operator);
-    console.log(operand2);
-    
-
-
-        
-
-    
+    console.log(operand2);   
 }
+
+function Reset() {
+    document.getElementById("display_text-2").innerHTML = x;
+}
+/* function exit() {
+    window.open('','_self').close()
+} */
