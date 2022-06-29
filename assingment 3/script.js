@@ -1,4 +1,9 @@
 let x = 0;
+var operand1 = "";
+var operand2 = "";
+var operator = "";
+let plug = 1;
+var answer;
 
 window.onload = function(){
     document.getElementById("display_text-2").innerHTML = x;
@@ -9,10 +14,88 @@ window.onload = function(){
         console.log(e.target.innerText);
 }  */ 
 
+function isNumeric(num){
+    return !isNaN(num)
+  }
+
+
 function handleClick(e) {
-    let plug = "ON"
-    if (plug == "ON") {
-        
+    
+    element = e.target.innerHTML
+
+    if (isNumeric(element) && plug)  {
+        operand1 += element;
+        document.getElementById("display_text-2").innerHTML = operand1;
     }
-    e.target.innerText;
+
+    switch (element) {
+        case "+":
+            operator += e.target.innerHTML;
+            document.getElementById("display_text-2").innerHTML = operand1 + " " + operator;
+            plug = false;
+            break;
+        case "-":
+            operator += e.target.innerHTML;
+            document.getElementById("display_text-2").innerHTML = operand1 + " " + operator;
+            plug = false;
+            break;
+        case "x":
+            operator += e.target.innerHTML;
+            document.getElementById("display_text-2").innerHTML = operand1 + " " + operator;
+            plug = false;
+            break;
+
+        case "÷":
+            operator += e.target.innerHTML;
+            document.getElementById("display_text-2").innerHTML = operand1 + " " + operator;
+            plug = false;
+            break;
+
+        case "%":
+            operator += e.target.innerHTML;
+            document.getElementById("display_text-2").innerHTML = operand1 + " " + operator;
+            plug = false;
+            break;
+
+        case "=":
+            switch (operator) {
+                case "+":
+                    answer = parseInt(operand1) + parseInt(operand2);
+                    document.getElementById("display_text-2").innerHTML = answer;
+                    break;
+                case "-":
+                    answer = parseInt(operand1) - parseInt(operand2);
+                    document.getElementById("display_text-2").innerHTML = answer.toString;
+                    break;
+                case "x":
+                    answer = parseInt(operand1) * parseInt(operand2);
+                    document.getElementById("display_text-2").innerHTML = answer.toString;
+                    break;;
+                case "÷":
+                    answer = parseInt(operand1) / parseInt(operand2);
+                    document.getElementById("display_text-2").innerHTML = answer.toString;
+                    break;
+                case "%":
+                    answer = parseInt(operand1) % parseInt(operand2);
+                    document.getElementById("display_text-2").innerHTML = answer.toString;
+                    break;
+            }
+    } 
+
+    if (isNumeric(element) && plug == false)  {
+        operand2 += element;
+        document.getElementById("display_text-2").innerHTML = operand1 + " " + operator + " " + operand2;
+    }
+
+
+    
+    console.log(operand1);
+    console.log(operator);
+    console.log(operand2);
+    
+
+
+        
+
+    
 }
