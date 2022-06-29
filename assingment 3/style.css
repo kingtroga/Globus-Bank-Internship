@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-grey-light-1: #faf9f9;
+    --color-grey-light-2: #f4f2f2;
+    --color-grey-light-3: #f0eeee;
+    --color-grey-light-4: #ccc;
+
+    --color-grey-dark-1: #333;
+    --color-grey-dark-2: #777;
+    --color-grey-dark-3: #999;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body{
+    position: relative;
+}
+.caculator {
+    margin: 20rem 25rem;
+    top: 50%;
+    left: 28%;
+    border: 1px solid black;
+    display: inline-block;
+    position: absolute;
+    transform: translate(-50, -50);
+}
+
+
+
+.caculator__button-group {
+    display: flex;
+    margin: auto 2rem;
+    
+}
+
+.btn {
+    padding: 3rem;
+    
+}
+
+.btn:not(:last-child) {
+    margin-right: .8rem;
+}
+
+#display_text-2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+}
+

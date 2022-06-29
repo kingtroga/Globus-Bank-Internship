@@ -65,19 +65,19 @@ function handleClick(e) {
                     break;
                 case "-":
                     answer = parseInt(operand1) - parseInt(operand2);
-                    document.getElementById("display_text-2").innerHTML = answer.toString;
+                    document.getElementById("display_text-2").innerHTML = answer;
                     break;
                 case "x":
                     answer = parseInt(operand1) * parseInt(operand2);
-                    document.getElementById("display_text-2").innerHTML = answer.toString;
+                    document.getElementById("display_text-2").innerHTML = answer;
                     break;;
                 case "÷":
                     answer = parseInt(operand1) / parseInt(operand2);
-                    document.getElementById("display_text-2").innerHTML = answer.toString;
+                    document.getElementById("display_text-2").innerHTML = answer;
                     break;
                 case "%":
                     answer = parseInt(operand1) % parseInt(operand2);
-                    document.getElementById("display_text-2").innerHTML = answer.toString;
+                    document.getElementById("display_text-2").innerHTML = answer;
                     break;
             }
     } 
