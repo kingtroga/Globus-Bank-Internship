@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <script src="./script.js" ></script>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <div class="caculator">
             <div class="caculator__text">
-                <div class="caculator__text-minor"></div>
-                <div class="caculator__text-major"></div>
+                <div id="display_text" class="caculator__text-minor"></div>
+                <div id="display_text-2" class="caculator__text-major"></div>
             </div>
             <div class="caculator__button">
                 <div class="caculator__button-group-1">
@@ -24,7 +23,7 @@
                     <button class="btn">÷</button>
                 </div>
                 <div class="caculator__button-group-3">
-                    <button class="btn">1</button>
+                    <button class="btn" onclick="handleClick(event)">1</button>
                     <button class="btn">2</button>
                     <button class="btn">3</button>
                     <button class="btn">x</button>
@@ -51,7 +50,9 @@
 
             </div>
         </div>
+        <script src="./script.js" ></script>
         
         
     </body>
+
 </html>

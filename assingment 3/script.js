@@ -1,21 +1,18 @@
 let x = 0;
 
-function Increment() {
-    x++;
-    document.getElementById("counter").innerHTML = x;
-}
-
-function Decrement() {
-    x--;
-    document.getElementById("counter").innerHTML = x;
-}
-
-function Reset() {
-    x = 0;
-    document.getElementById("counter").innerHTML = x;
-}
-
 window.onload = function(){
     document.getElementById("display_text-2").innerHTML = x;
     console.log('Page loaded');
 } 
+
+/* window.onclick = e => {
+        console.log(e.target.innerText);
+}  */ 
+
+function handleClick(e) {
+    let plug = "ON"
+    if (plug == "ON") {
+        
+    }
+    e.target.innerText;
+}
