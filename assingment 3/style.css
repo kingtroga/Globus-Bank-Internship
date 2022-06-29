@@ -22,18 +22,29 @@ html {
 body{
     position: relative;
 }
+
 .caculator {
     margin: 20rem 25rem;
     top: 50%;
     left: 28%;
-    border: 1px solid black;
+    border: 1px solid var(--color-grey-dark-1);
     border-radius: 10px;
     display: inline-block;
     position: absolute;
     transform: translate(-50, -50);
+    background-color: var(--color-grey-dark-1);
 }
 
 
+
+#display_text-2 {
+    text-align: right;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-right: 1rem;
+    color: var(--color-grey-light-1); 
+    
+}
 
 .caculator__button-group {
     display: flex;
@@ -43,7 +54,11 @@ body{
 }
 
 .btn {
+    outline:none;
+    border: none;
+    box-shadow: 0 1rem 1rem rgba(0,0,0,.8);
     padding: 3rem;
+    background-color:  var(--color-grey-light-4);
 }
 
 .btn-pretty {
