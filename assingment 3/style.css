@@ -24,9 +24,9 @@ body{
 }
 
 .caculator {
-    margin: 20rem 25rem;
+    margin: 15rem 25rem;
     top: 50%;
-    left: 28%;
+    left: 25%;
     border: 1px solid var(--color-grey-dark-1);
     border-radius: 10px;
     display: inline-block;

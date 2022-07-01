@@ -80,6 +80,11 @@ function handleClick(e) {
                     document.getElementById("display_text-2").innerHTML = answer;
                     break;
             }
+            /* Reset.call(); */
+            operand1 = "";
+            operand2 = "";
+            operator = "";
+            plug = 1;
     } 
 
     if (isNumeric(element) && plug == false)  {
@@ -93,6 +98,10 @@ function handleClick(e) {
 
 function Reset() {
     document.getElementById("display_text-2").innerHTML = x;
+    operand1 = "";
+    operand2 = "";
+    operator = "";
+    plug = 1;
 }
 /* function exit() {
     window.open('','_self').close()
