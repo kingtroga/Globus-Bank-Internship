@@ -1,8 +1,13 @@
-let x = 0;
+let x = 0, y = 0;
+
 
 function Increment() {
     x++;
-    document.getElementById("counter").innerHTML = x;
+    if (x == 60) {
+        x = 0;
+        y++;
+    }
+    document.getElementById("counter").innerHTML = `${y}:${x}`;
 }
 
 function Decrement() {
@@ -17,5 +22,7 @@ function Reset() {
 
 window.onload = function(){
     document.getElementById("counter").innerHTML = x;
+    setInterval(() => Increment(), 1000);
     console.log('Page loaded');
 } 
+
